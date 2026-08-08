@@ -1,0 +1,1 @@
+import{t as e}from"./rsc-CVy_C17F.js";var t=e(()=>{throw Error(`Unexpectedly client reference export 'Header' is called on server`)},`6f014b4f0add`,`Header`),n=e(()=>{throw Error(`Unexpectedly client reference export 'Footer' is called on server`)},`6f014b4f0add`,`Footer`);export{t as n,n as t};
