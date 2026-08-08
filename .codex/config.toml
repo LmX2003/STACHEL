@@ -85,6 +85,16 @@ startup_timeout_sec = 30
 multi_agent = true
 
 # Profiles — switch with `codex -p <name>`
+[profiles.strict]
+approval_policy = "on-request"
+sandbox_mode = "read-only"
+web_search = "cached"
+
+[profiles.yolo]
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
 [agents]
 # Multi-agent role limits and local role definitions.
 # These map to `.codex/agents/*.toml` and mirror the repo's explorer/reviewer/docs workflow.
