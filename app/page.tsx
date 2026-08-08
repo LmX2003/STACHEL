@@ -10,7 +10,7 @@ const services=[
   {n:"02",title:"Heizung",copy:"Moderne Vaillant Heiztechnik, eigener Ersatzteilbestand und verlässlicher Kundendienst über viele Jahre.",href:"/heizung",image:"/images/original/WhatsApp-Image-2020-03-25-at-10.09.18-1920w.jpeg",position:"center 66%"},
   {n:"03",title:"Gas",copy:"Effiziente Brennwerttechnik und fachgerechter Gas-Check für Komfort und größtmögliche Sicherheit.",href:"/gas",image:"/images/original/10207-7f762aba-960w.jpeg",position:"center bottom"},
   {n:"04",title:"Solar",copy:"Kostenfreie Sonnenenergie für Warmwasser und solare Heizungsunterstützung – individuell dimensioniert.",href:"/solar",image:"/images/original/125754-1920w.jpeg",position:"center"},
-  {n:"05",title:"Trinkwasser",copy:"Hygiene, zugelassene Materialien und sichere Leitungsdimensionierung gehören in fachkundige Hände.",href:"/wasser",image:"/images/trinkwasser-faucet-pexels-5710332.jpg",position:"center 63%"}
+  {n:"05",title:"Trinkwasser",copy:"Hygiene, zugelassene Materialien und sichere Leitungsdimensionierung gehören in fachkundige Hände.",href:"/wasser",image:"/images/trinkwasser-faucet-pexels-5710332.jpg",position:"center 55%"}
 ];
 
 export default function Home(){return <><Header/><main>
