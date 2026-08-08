@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
-import Link from "next/link";
+import type { AnchorHTMLAttributes } from "react";
 import { notFound } from "next/navigation";
 import { Footer, Header } from "../site-shell";
 import { labels, pages, routes } from "../site-data";
+
+// eslint-disable-next-line jsx-a11y/anchor-has-content
+function Link({ href, ...props }: AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) { return <a href={href} {...props} />; }
 
 export function generateStaticParams(){return routes.map(slug=>({slug}))}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const page=pages[slug];if(!page)return{};return{title:`${page.title} | Haustechnik Stachel`,description:page.intro}}

@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import type { AnchorHTMLAttributes } from "react";
+
+// eslint-disable-next-line jsx-a11y/anchor-has-content
+function Link({ href, ...props }: AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) { return <a href={href} {...props} />; }
 import { Footer, Header } from "./site-shell";
 
 const services=[

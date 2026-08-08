@@ -1,7 +1,10 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import type { AnchorHTMLAttributes } from "react";
 import { useEffect, useState } from "react";
+
+// eslint-disable-next-line jsx-a11y/anchor-has-content
+function Link({ href, ...props }: AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) { return <a href={href} {...props} />; }
 
 const serviceLinks = [["Bad","/bad"],["Heizung","/heizung"],["Gas","/gas"],["Solar","/solar"],["Trinkwasser","/wasser"]];
 
